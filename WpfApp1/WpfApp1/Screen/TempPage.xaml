@@ -1,0 +1,27 @@
+﻿<Page x:Class="WpfApp1.Screen.TempPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1.Screen"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="TempPage">
+
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="43" VerticalAlignment="Top" Width="{DynamicResource {x:Static SystemParameters.MaximizedPrimaryScreenWidthKey}}" Background="#FF5B5858" Margin="147,0,0,0">
+            <Label x:Name="TitleLabel" Content="" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="43" Width="127" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label x:Name="LoginNameLabel" HorizontalAlignment="Left" Margin="506,0,0,0" VerticalAlignment="Top" Width="147" Height="43" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom"/>
+        </Grid>
+
+        <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Width="147" Background="#FF5B5858" Height="{DynamicResource {x:Static SystemParameters.MaximizedPrimaryScreenHeightKey}}">
+            <Button x:Name="TraningSideButton" Content="トレーニング" HorizontalAlignment="Left" VerticalAlignment="Top" Width="147" Height="43" Background="#FFC5C5C5" Click="TraningSideButton_Click"/>
+            <Button x:Name="ScheduleSideButton" Content="スケジュール" HorizontalAlignment="Left" VerticalAlignment="Top" Width="147" Height="43" Background="#FFC5C5C5" Margin="0,43,0,0" Click="ScheduleSideButton_Click"/>
+            <Button x:Name="MealSideButton" Content="食事目標" HorizontalAlignment="Left" VerticalAlignment="Top" Width="147" Height="43" Background="#FFC5C5C5" Margin="0,86,0,0" Click="MealSideButton_Click"/>
+            <Button x:Name="ConfigSideButton" Content="設定" HorizontalAlignment="Left" VerticalAlignment="Top" Width="147" Height="43" Background="#FFC5C5C5" Margin="0,129,0,0" Click="ConfigSideButton_Click"/>
+        </Grid>
+        <Frame x:Name="ContentFrame" Content="" HorizontalAlignment="Left" Margin="147,43,0,0" Width="{DynamicResource {x:Static SystemParameters.MaximizedPrimaryScreenWidthKey}}" 
+               Loaded="ContentFrame_Loaded"/>
+
+    </Grid>
+</Page>

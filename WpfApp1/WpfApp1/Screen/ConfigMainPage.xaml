@@ -1,0 +1,20 @@
+﻿<Page x:Class="WpfApp1.Screen.ConfigMainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1.Screen"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ConfigMainPage">
+
+    <Grid Loaded="Grid_Loaded" Height="407" Width="653" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <Button x:Name="ConfigChangeButton" Content="設定を変更します" HorizontalAlignment="Left" VerticalAlignment="Top" Width="413" Height="46" Margin="38,271,0,0" Background="#FF707070" Click="ConfigChangeButton_Click"/>
+        <TextBox x:Name="HeightCongfig" HorizontalAlignment="Left" Height="24" Margin="174,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="103"/>
+        <TextBox x:Name="WeightConfig" HorizontalAlignment="Left" Height="24" Margin="174,70,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="103"/>
+        <TextBox x:Name="BodyfatConfig" HorizontalAlignment="Left" Height="24" Margin="176,0,0,284" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Bottom" Width="101"/>
+        <Label Content="体重(㎏)：" HorizontalAlignment="Left" Margin="101,41,0,0" VerticalAlignment="Top" Height="24" Width="73" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" RenderTransformOrigin="0.543,0.37"/>
+        <Label Content="身長(cm)：" HorizontalAlignment="Left" Margin="101,70,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Width="73" Height="24"/>
+        <Label Content="体脂肪率(%)：" HorizontalAlignment="Left" Margin="98,99,0,0" VerticalAlignment="Top" Height="24" Width="73" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+    </Grid>
+</Page>

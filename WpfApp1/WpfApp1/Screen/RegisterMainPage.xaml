@@ -1,0 +1,46 @@
+﻿<Page x:Class="WpfApp1.Screen.RegisterMainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1.Screen"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="RegisterMainPage">
+
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="368" VerticalAlignment="Top" Width="602" Background="White">
+            <Button Content="Button" HorizontalAlignment="Left" Margin="170,243,0,0" VerticalAlignment="Top" Width="161" Height="36" Click="Button_Click"/>
+            <PasswordBox x:Name="InputPassword" HorizontalAlignment="Left" Margin="170,59,0,0" VerticalAlignment="Top" Width="161" Height="26"/>
+            <TextBox x:Name="InputUsernameLabel" HorizontalAlignment="Left" Height="26" Margin="170,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="161"/>
+            <Label Content="ユーザー名：" HorizontalAlignment="Left" Margin="88,28,0,0" VerticalAlignment="Top" Width="77" HorizontalContentAlignment="Right"/>
+            <Label Content="パスワード：" HorizontalAlignment="Left" Margin="88,59,0,0" VerticalAlignment="Top" Width="77" HorizontalContentAlignment="Right"/>
+            <TextBox x:Name="InputBornMonthLabel" HorizontalAlignment="Left" Height="26" Margin="240,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.365,0.595"/>
+            <TextBox x:Name="InputHeightLabel" HorizontalAlignment="Left" Height="26" Margin="170,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48"/>
+            <TextBox x:Name="InputWeightLabel" HorizontalAlignment="Left" Height="26" Margin="170,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48"/>
+            <TextBox x:Name="InputBodyfatLabel" HorizontalAlignment="Left" Height="26" Margin="170,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48"/>
+            <Label Content="生年月日：" HorizontalAlignment="Left" Margin="88,90,0,0" VerticalAlignment="Top" Width="77" HorizontalContentAlignment="Right"/>
+            <Label Content="身長：" HorizontalAlignment="Left" Margin="88,121,0,0" VerticalAlignment="Top" Width="77" HorizontalContentAlignment="Right"/>
+            <Label Content="体重：" HorizontalAlignment="Left" Margin="88,152,0,0" VerticalAlignment="Top" Width="77" HorizontalContentAlignment="Right"/>
+            <Label Content="体脂肪率：" HorizontalAlignment="Left" Margin="88,183,0,0" VerticalAlignment="Top" Width="77" HorizontalContentAlignment="Right"/>
+            <TextBox x:Name="InputBornYearLabel" HorizontalAlignment="Left" Height="26" Margin="170,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" RenderTransformOrigin="-0.715,0.505"/>
+            <TextBox x:Name="InputBornDayLabel" HorizontalAlignment="Left" Height="26" Margin="310,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48"/>
+            <Label Content="年" HorizontalAlignment="Left" Margin="218,90,0,0" VerticalAlignment="Top"/>
+            <Label Content="月" HorizontalAlignment="Left" Margin="288,90,0,0" VerticalAlignment="Top"/>
+            <Label Content="日" HorizontalAlignment="Left" Margin="358,90,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="1.33"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+            <Label Content="cm" HorizontalAlignment="Left" Margin="218,121,0,0" VerticalAlignment="Top"/>
+            <Label Content="kg" HorizontalAlignment="Left" Margin="218,152,0,0" VerticalAlignment="Top"/>
+            <Label Content="%" HorizontalAlignment="Left" Margin="218,183,0,0" VerticalAlignment="Top"/>
+        </Grid>
+
+    </Grid>
+</Page>

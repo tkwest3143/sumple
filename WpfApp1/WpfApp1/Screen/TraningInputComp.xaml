@@ -1,0 +1,17 @@
+﻿<Page x:Class="WpfApp1.Screen.TraningInputComp"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1.Screen"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="TraningInputComp">
+
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="342" VerticalAlignment="Top" Width="620">
+            <Label Content="記入が完了しました。" FontSize="18px"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="255" Height="49" Margin="10,10,0,0"/>
+        </Grid>
+
+    </Grid>
+</Page>
